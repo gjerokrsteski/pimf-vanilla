@@ -62,10 +62,14 @@ $config_app = array(
   |------------------------------------------------------------------------
   */
   'production' => array(
-    'db' => array(
-      'driver' => 'sqlite',
-      'database' => 'app/Vanilla/_database/production.db'
-    ),
+
+    'db' => null, // we do not need anny database
+
+    //'db' => array(
+    //  'driver' => 'sqlite',
+    //  'database' => 'app/Vanilla/_database/production.db'
+    //),
+
   ),
 
   /*
