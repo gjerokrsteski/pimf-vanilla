@@ -1,7 +1,7 @@
 <?php
-namespace MyFirstBlog\Controller;
+namespace Vanilla\Controller;
 
-use Pimf\Controller\Base, Pimf\View, Pimf\Registry, Pimf\Util\Validator;
+use Pimf\Controller\Base, Pimf\View;
 
 class Hello extends Base
 {
@@ -14,8 +14,8 @@ class Hello extends Base
           'hello.phtml',
           array(
             'blog_title'   => 'Welcome to PIMF Vanilla bundle',
-            'blog_content' => 'Hello world!!!',
-            'blog_footer'  => 'Learn the terrain and create something beautiful!'
+            'blog_content' => 'Hello '.$this->request->fromGet()->get('firstname', 'World').'!!!',
+            'blog_footer'  => 'Please type at the URL "/hello/Berry" and see what happens!'
           )
     );
   }

@@ -20,6 +20,9 @@
           font-family: 'Lobster', cursive;
           font-weight: bold;
         }
+        h2{
+          color: #2972A2;
+        }
         footer{
           font-size   : 10pt;
         }
@@ -33,7 +36,10 @@
   <h2><?php echo $this->blog_content?></h2>
   <hr/>
   <footer>
-        <p><?php echo $this->blog_footer ?> Now that you're up and running, it's time to start creating!
+        <p>
+          <strong><?php echo $this->blog_footer ?></strong>
+          <br />
+          Now that you're up and running, it's time to start creating!
           Here are some links to help you get started:
         </p>
 

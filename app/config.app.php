@@ -49,7 +49,7 @@ $config_app = array(
   'app' => array(
     'name'               => 'Vanilla',
     'key'                => 'some5secret5key5here', // application key
-    'default_controller' => 'blog', // the name of the fallback controller
+    'default_controller' => 'hello', // the name of the fallback controller
     'routeable'          => true, // get cleaner URLs or not
     'url'                => 'http://localhost', // URL used to access your application without a trailing slash.
     'index'              => '', // if you are using mod_rewrite to get cleaner URLs let it empty otherwise set index.php
@@ -64,7 +64,7 @@ $config_app = array(
   'production' => array(
     'db' => array(
       'driver' => 'sqlite',
-      'database' => 'app/MyFirstBlog/_database/blog-production.db'
+      'database' => 'app/Vanilla/_database/production.db'
     ),
   ),
 
@@ -88,7 +88,7 @@ $config_app = array(
   */
   'error' => array(
     'ignore_levels' => array(E_USER_DEPRECATED),
-    'debug_info' => false, // true = if developing - false = if production
+    'debug_info' => true, // true = if developing - false = if production
     'log' => true,
   ),
 
@@ -100,15 +100,15 @@ $config_app = array(
   'session' => array(
 
       // Session storage 'cookie', 'file', 'pdo', 'memcached', 'apc', 'redis', 'dba', 'wincache', 'memory'
-      'storage' => 'file',
+      'storage' => 'cookie',
 
       // If using file storage - default is null
-      'storage_path' => 'app/MyFirstBlog/_session/',
+      'storage_path' => 'app/Vanilla/_session/',
 
       // If using the PDO (database) session storage
       'database' => array(
-        'driver' => 'sqlite',
-        'database' => 'app/MyFirstBlog/_session/blog-session.db',
+        //'driver' => 'sqlite',
+        //'database' => 'app/Vanilla/_session/session.db',
       ),
 
       // Garbage collection has a 2% chance of occurring for any given request to
@@ -145,12 +145,12 @@ $config_app = array(
       'storage' => 'file',
 
       // If using file storage - default is null
-      'storage_path' => 'app/MyFirstBlog/_cache/',
+      'storage_path' => 'app/Vanilla/_cache/',
 
       // If using the PDO (database) cache storage
       'database' => array(
-        'driver' => 'sqlite',
-        'database' => 'app/MyFirstBlog/_cache/blog-cache.db',
+        //'driver' => 'sqlite',
+        //'database' => 'app/Vanilla/_cache/cache.db',
       ),
 
       // If using Memcached and APC to prevent collisions with other applications on the server.
