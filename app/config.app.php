@@ -10,7 +10,7 @@
 | configuration arrays.
 |
 */
-$config_app = array(
+return array(
 
   /*
   |------------------------------------------------------------------------
@@ -78,9 +78,6 @@ $config_app = array(
   |------------------------------------------------------------------------
   */
   'bootstrap' => array(
-    'expected' => array(
-      'php_version' => 5.3,
-     ),
     'local_temp_directory' => '/tmp/'
   ),
 
@@ -166,6 +163,3 @@ $config_app = array(
    ),
 
 );
-
-// please do not edit the code below!!!
-if(isset($config)){$config = array_merge($config, $config_app);}
