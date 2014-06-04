@@ -17,7 +17,7 @@ Navigate to your application in a web browser. If all is well, you should see a 
 
 Learning PIMF
 -------------
-One of the best ways to learn PIMF is to read through the entirety of its documentation. This guide details all aspects of the framework and how to apply them to your application.
+One of the best ways to learn PIMF is to read through the entirety of its documentation. This guide details all aspects of the framework and how to apply them to your application. https://github.com/gjerokrsteski/pimf/wiki
 
-Please read here: https://github.com/gjerokrsteski/pimf/wiki
+Read the PIMF Starter book almost anywhere. Available as a PDF, EPUB and MOBI. You can now read it on all devices, as well as offline: https://leanpub.com/pimf-starter/
 
