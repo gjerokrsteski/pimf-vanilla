@@ -15,7 +15,7 @@ class Hello extends Base
     echo new View(
           'hello.phtml',
           array(
-            'blog_title'   => 'Welcome to PIMF Twig bundle',
+            'blog_title'   => 'Welcome to PIMF Vanilla bundle',
             'blog_content' => 'Hello '.join(' ', (array)$firstname).'!!!',
             'blog_footer'  => 'Please type at the URL "/hello/Barry" and see what happens!'
           )
