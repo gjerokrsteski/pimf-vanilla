@@ -88,7 +88,7 @@ return array(
   */
   'error' => array(
     'ignore_levels' => array(E_USER_DEPRECATED),
-    'debug_info' => false, // true = if developing - false = if production
+    'debug_info' => true, // true = if developing - false = if production
     'log' => true,
   ),
 
@@ -100,7 +100,7 @@ return array(
   'session' => array(
 
       // Session storage 'cookie', 'file', 'pdo', 'memcached', 'apc', 'redis', 'dba', 'wincache', 'memory'
-      'storage' => 'cookie',
+      'storage' => 'memory',
 
       // If using file storage - default is null
       'storage_path' => 'app/Vanilla/_session/',
@@ -142,7 +142,7 @@ return array(
   'cache' => array(
 
       // Cache storage 'pdo', 'file', 'memcached', 'apc', 'redis', 'dba', 'wincache', 'memory'
-      'storage' => 'file',
+      'storage' => 'memory',
 
       // If using file storage - default is null
       'storage_path' => 'app/Vanilla/_cache/',
