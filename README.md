@@ -9,7 +9,12 @@ Installation & Configuration
 
 2. cd pimf-vanilla/
 
-3. git submodule foreach git pull origin master
+3. update submodules
+```php  
+  git submodule --quiet sync
+  git submodule --quiet update --force --init --recursive
+  git submodule foreach git pull --force origin master
+```
 
 4. php pimf core:init
 
