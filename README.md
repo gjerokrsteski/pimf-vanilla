@@ -22,7 +22,7 @@ Installation & Configuration
 Alternatively you can run the PHP's built-in web server that is provided since PHP 5.4.0
  
 ```php   
- php -S localhost:8000
+ php -S 127.0.0.1:1337
 ```
 
 Please notice: this web server was designed to aid application development. It may also be useful for testing purposes or for 
