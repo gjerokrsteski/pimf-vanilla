@@ -111,7 +111,7 @@ return array(
   'session' => array(
 
       // Session storage 'cookie', 'file', 'pdo', 'memcached', 'apc', 'redis', 'dba', 'wincache', 'memory'
-      'storage' => 'memory',
+      'storage' => 'file',
 
       // If using file storage - default is null
       'storage_path' => 'app/Vanilla/_session/',
